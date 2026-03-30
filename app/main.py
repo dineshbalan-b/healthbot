@@ -13,7 +13,7 @@ load_dotenv()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    print(" Starting AI Medicine Assistant...")
+    print(" Starting AI Document Assistant...")
     init_vector_store()
     yield
     print(" Shutting down...")

@@ -84,7 +84,7 @@ def get_rag_chain(session_id: str):
         llm = ChatGroq(temperature=0.0, model_name=LLM_MODEL, groq_api_key=groq_key)
 
         STRICT_PROMPT = PromptTemplate(
-            template="""You are a STRICT Medical AI Assistant.
+            template="""You are a STRICT and precise Document AI Assistant.
 Your ONLY source of knowledge is the provided PDF document context below.
 If the answer to the question is NOT explicitly found in the Context, you MUST refuse and reply:
 "I am sorry, but I can only provide answers based on the uploaded document. Your query is not covered in the document."

@@ -1,12 +1,12 @@
-# AI Document Assistant (HealthBot)
+# AI Document Assistant
 
-A PDF-based medical AI assistant built with FastAPI, LangChain, Cohere, and Groq. Upload a medical PDF and ask questions — the model answers strictly from the document only.
+A PDF-based intelligent document assistant built with FastAPI, LangChain, Cohere, and Groq. Upload any PDF file and securely query its contents — the model answers strictly using only the data found in the document.
 
 ---
 
 ## Features
 
-- Upload any medical PDF through the web interface
+- Upload any PDF document through the web interface
 - Answers are strictly grounded in the uploaded document context
 - Refuses to answer if the query is not covered in the PDF
 - Persistent FAISS vector store — index survives server restarts
